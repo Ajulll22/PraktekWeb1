@@ -10,13 +10,11 @@ class Home extends BaseController
 	//--------------------------------------------------------------------
 
 	public function show() {
-		$nama['title']='Ajulll';
-		echo view('mahasiswa/index', $nama);
-		echo view('mahasiswa/header', $nama);
-		echo view('mahasiswa/footer', $nama);
-		$nama['title']='1817051042';
-		echo view('mahasiswa/index', $nama);
-		echo view('mahasiswa/header', $nama);
-		echo view('mahasiswa/footer', $nama);
+		$data['nama']='Ahmad Julio Rizki';
+		$data['npm']='1817051042';
+		
+		echo view('mahasiswa/header');
+		echo view('mahasiswa/index',$data);
+		echo view('mahasiswa/footer');
 	}
 }
